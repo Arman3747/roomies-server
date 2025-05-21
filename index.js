@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 
 const app = express();
@@ -33,11 +33,18 @@ async function run() {
 
     //Read
     app.get('/roommates', async (req, res)=>{
-
       const result = await roommatesCollection.find().toArray();
       res.send(result);
-
     })
+
+    //Read 1 Room
+    app.get('/roommates/:id', async(req, res) => {
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result = await roommatesCollection.findOne(query);
+      res.send(result);
+    })
+
 
 
     //Create 
@@ -47,6 +54,19 @@ async function run() {
       const result = await roommatesCollection.insertOne(newRoommate);
       res.send(result);
     })
+
+
+
+
+    //Delete
+    app.delete('/roommates/:id', async (req, res) => {
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result = await roommatesCollection.deleteOne(query);
+      res.send(result);
+    })
+
+
 
 
 

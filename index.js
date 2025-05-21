@@ -30,10 +30,20 @@ async function run() {
 
     const roommatesCollection = client.db('roomies').collection('roommates')
 
+
+    //Read
+    app.get('/roommates', async (req, res)=>{
+
+      const result = await roommatesCollection.find().toArray();
+      res.send(result);
+
+    })
+
+
+    //Create 
     app.post('/roommates', async (req, res) => {
       const newRoommate = req.body;
-      console.log(newRoommate);
-
+      // console.log(newRoommate);
       const result = await roommatesCollection.insertOne(newRoommate);
       res.send(result);
     })

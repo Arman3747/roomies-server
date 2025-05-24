@@ -16,12 +16,7 @@ In this Web App, you can find a room or an apartment for your stay.
 - On the home page, users can choose their monthly plan.
 - Registered users can visit the Bills and Profile pages.
 -In the navbar, users can click on their profile picture to see their username, email, and available balance.
-- Users can view all their outstanding bills on the Bills page.
-- Users can sort their bills on the Bills page.
-- Users can view the details of their bills and make payments.
-- In the Profile page, users can see their profile picture, name, and email.
-- In the Profile page, users can update their name and profile picture.
-- An error page will display if the page is not available or an error occurs for a better user experience.
+
 
 ## npm packages in Server Side
 

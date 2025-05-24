@@ -10,12 +10,16 @@ In this Web App, you can find a room or an apartment for your stay.
 
 ## key features
 
+- Roomies is a Web App where users can post to search for a roommate to stay with.
 - Users can register and login.
 - Users can also register using a Google Account.
 - The home page displays all the features of the web app.
-- On the home page, users can choose their monthly plan.
-- Registered users can visit the Bills and Profile pages.
--In the navbar, users can click on their profile picture to see their username, email, and available balance.
+- On the home page, users can view "Find a Room," see the average number of users per month, the history of the company, and Frequently Asked Questions.
+- Registered users can visit the "Add to Find Roommate" page where they can advertise a room for rent.
+- In the navbar, users can hover over their profile picture to see their username and click to sign out.
+- On the browse page, everyone can see all the room sharing posts. Each post has a "View Details" button that will take them to the details of that post.
+- Registered users can visit the My Listing page where they can see all their advertisements. Each advertisement is displayed in a table where each row represents an advertisement. Each row also contains an edit and a delete button. Registered users can edit their posts by clicking the edit button and can also delete their posts by clicking the delete button.
+- An error page will display if the page is not available or an error occurs for a better user experience.
 
 
 ## npm packages in Server Side

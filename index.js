@@ -66,6 +66,23 @@ async function run() {
       res.send(result);
     })
 
+    //patch
+    app.patch('/roommates/:id', async (req, res) => {
+      console.log( req.body );
+      const id = req.params.id;
+
+      const { likeCount, likedUsers } = req.body; 
+      const filter = { _id: new ObjectId(id)}
+      const updatedDoc ={
+        $set: {
+            likeCount: likeCount,
+            likedUsers: likedUsers,
+        }
+      }
+      const result = await roommatesCollection.updateOne(filter, updatedDoc)
+      res.send(result);
+    })
+
     //Delete
     app.delete('/roommates/:id', async (req, res) => {
       const id = req.params.id;

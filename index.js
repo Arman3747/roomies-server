@@ -3,7 +3,6 @@ const cors = require('cors');
 require('dotenv').config();
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -29,7 +28,6 @@ async function run() {
     await client.connect();
 
     const roommatesCollection = client.db('roomies').collection('roommates')
-
 
     //Read
     app.get('/roommates', async (req, res)=>{
@@ -91,27 +89,6 @@ async function run() {
       res.send(result);
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
@@ -121,8 +98,6 @@ async function run() {
   }
 }
 run().catch(console.dir);
-
-
 
 app.get('/', (req,res) => {
     res.send('Room is empty !')

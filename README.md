@@ -13,6 +13,7 @@ In this Web App, you can find a room or an apartment for your stay.
 - Roomies is a Web App where users can post to search for a roommate to stay with.
 - Users can register and login.
 - Users can also register using a Google Account.
+- In the top right corner of the navbar, there is a button that will toggle the dark/light theme.
 - The home page displays all the features of the web app.
 - On the home page, users can view "Find a Room," see the average number of users per month, the history of the company, and Frequently Asked Questions.
 - Registered users can visit the "Add to Find Roommate" page where they can advertise a room for rent.

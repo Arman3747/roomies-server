@@ -1,4 +1,4 @@
-![App Screenshot](https://i.ibb.co/h3H1YWN/logo-roomies-light.png)
+![App Screenshot](https://i.ibb.co/ks53h149/roomies-transparent.png)
 
 # Roommate Finder Website - (roomies)
 
@@ -8,19 +8,52 @@ In this Web App, you can find a room or an apartment for your stay.
 
 - Please Visit [roomies](https://fascinating-sunflower-cfec7f.netlify.app/) !
 
-## key features
+## ✅ key features
 
-- Roomies is a Web App where users can post to search for a roommate to stay with.
-- Users can register and login.
-- Users can also register using a Google Account.
-- In the top right corner of the navbar, there is a button that will toggle the dark/light theme.
-- The home page displays all the features of the web app.
-- On the home page, users can view "Find a Room," see the average number of users per month, the history of the company, and Frequently Asked Questions.
-- Registered users can visit the "Add to Find Roommate" page where they can advertise a room for rent.
-- In the navbar, users can hover over their profile picture to see their username and click to sign out.
-- On the browse page, everyone can see all the room sharing posts. Each post has a "View Details" button that will take them to the details of that post.
-- Registered users can visit the My Listing page where they can see all their advertisements. Each advertisement is displayed in a table where each row represents an advertisement. Each row also contains an edit and a delete button. Registered users can edit their posts by clicking the edit button and can also delete their posts by clicking the delete button.
-- An error page will display if the page is not available or an error occurs for a better user experience.
+- 🔐 **User Authentication with Firebase**  
+  Email/password & Google sign-in support with validation and feedback.
+
+- 🧍‍♂️ **User Profile Display**  
+  Shows user photo, name, and logout option on the navbar after login.
+
+- 📋 **Add Roommate Listing**  
+  Authenticated users can add new room listings with title, location, rent, type, lifestyle, and contact details.
+
+- 📂 **My Listings (Protected Route)**  
+  Users can view, update, and delete only their own roommate posts.
+
+- 🔎 **Browse All Listings**  
+  Public listing page shows all roommate posts with search and "See More" options.
+
+- ❤️ **Like Functionality with Conditional Reveal**  
+  Users can like a post to increase interest count and reveal the contact number.
+
+- 📊 **Dashboard Analytics**  
+  View personalized dashboard with stats like total posts, likes, interested users, and average rent.
+
+- 📄 **Details Page with Conditional Contact Info**  
+  Full listing details with like functionality to unlock contact information.
+
+- 📝 **Update Post Feature**  
+  Users can edit their existing listings with pre-filled forms.
+
+- 🧹 **Delete Listing with Confirmation**  
+  Users can safely delete their posts with a confirmation popup.
+
+- 🌓 **Dark/Light Theme Toggle**  
+  Switch between light and dark modes for better accessibility and comfort.
+
+- 🔄 **Responsive Design**  
+  Fully optimized for mobile, tablet, and desktop using Tailwind CSS and DaisyUI.
+
+- 🔒 **Protected Routing**  
+  Private routes for authenticated users only, with reload safety.
+
+- 🎨 **Interactive Animations**  
+  Uses Lottie, React Awesome Reveal, and Simple Typewriter for a smooth UX.
+
+- 🛠 **Robust Error & Loading Handling**  
+  Includes toast notifications, SweetAlert for feedback, loading spinners, and a custom 404 page.
 
 
 ## npm packages in Server Side
@@ -33,6 +66,13 @@ In this Web App, you can find a room or an apartment for your stay.
 - Uses [MongoDB](https://www.mongodb.com/)  for storing, querying, and managing large volumes of flexible, JSON-like data in web and mobile applications.
 - Uses [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) for hosting, managing, and scaling MongoDB databases in the cloud securely.
 - Uses [Vercel](https://vercel.com/) for deploying, hosting, and scaling frontend web applications with speed, simplicity, and automation.
+
+## Technologies Used
+
+- ![Node.js](https://img.shields.io/badge/nodedotjs-v22.12.0-155dfc?logo=nodedotjs&logoColor=%235FA04E)
+- ![Express](https://img.shields.io/badge/Express-v5.1.0-155dfc?logo=express&logoColor=%23000000)
+- ![Mongodb](https://img.shields.io/badge/mongodb-v6.16.0-155dfc?logo=mongodb&logoColor=%2347A248)
+- ![.env](https://img.shields.io/badge/.env-v16.5.0-155dfc?logo=dotenv&logoColor=%23ECD53F)
 
 
 ### Thank you for Reading!

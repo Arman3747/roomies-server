@@ -76,4 +76,72 @@ In this Web App, you can find a room or an apartment for your stay.
 - ![Vercel](https://img.shields.io/badge/Vercel-ffffff?logo=vercel&logoColor=%23000000)
 
 
+
+## 🛠️ Installation & Setup Instructions
+
+
+Follow the steps below to set up the **B2Bridge** application locally:
+
+---
+
+### 1. Clone the Repositories
+
+```bash
+git clone https://github.com/Arman3747/roomies-client.git
+git clone https://github.com/Arman3747/roomies-server.git
+```
+
+---
+
+### 2. Client Setup
+
+```bash
+cd roomies-client
+npm install
+```
+
+Create a `.env.local` file in the root of the client folder and add the following:
+
+```env
+VITE_apiKey=your_firebase_key
+VITE_authDomain=your_auth_domain
+VITE_projectId=your_project_id
+VITE_storageBucket=your_storage_bucket
+VITE_messagingSenderId=your_sender_id
+VITE_appId=your_app_id
+```
+
+Then start the client:
+
+```bash
+npm run dev
+```
+
+---
+
+### 3. Server Setup
+
+```bash
+cd roomies-server
+npm install
+```
+
+Create a `.env` file in the root of the server folder and add the following:
+
+```env
+roomies_DB_USER=your_mongodb_admin_username
+roomies_DB_PASS=your_mongodb_admin_password
+```
+
+Then start the server:
+
+```bash
+nodemon index.js
+```
+
+
+---
+
+
+
 ### Thank you for Reading!

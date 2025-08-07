@@ -73,6 +73,7 @@ In this Web App, you can find a room or an apartment for your stay.
 - ![Express](https://img.shields.io/badge/Express-v5.1.0-155dfc?logo=express&logoColor=%23000000)
 - ![Mongodb](https://img.shields.io/badge/mongodb-v6.16.0-155dfc?logo=mongodb&logoColor=%2347A248)
 - ![.env](https://img.shields.io/badge/.env-v16.5.0-155dfc?logo=dotenv&logoColor=%23ECD53F)
+- ![Vercel](https://img.shields.io/badge/Vercel-ffffff?logo=vercel&logoColor=%23000000)
 
 
 ### Thank you for Reading!

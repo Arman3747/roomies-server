@@ -1,4 +1,4 @@
-![App Screenshot](https://i.ibb.co/ks53h149/roomies-transparent.png)
+![App Screenshot](https://i.ibb.co/Q3ymNpkh/Roomies-github.png)
 
 # Roommate Finder Website - (roomies)
 
